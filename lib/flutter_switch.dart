@@ -29,9 +29,7 @@ class FlutterSwitch extends StatefulWidget {
     this.borderRadius = 20.0,
     this.padding = 4.0,
     this.showOnOff = false,
-    this.activeText,
-    this.inactiveText,
-    this.activeTextFontWeight,
+
     this.inactiveTextFontWeight,
     this.switchBorder,
     this.activeSwitchBorder,
