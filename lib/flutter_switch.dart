@@ -29,7 +29,10 @@ class FlutterSwitch extends StatefulWidget {
     this.borderRadius = 20.0,
     this.padding = 4.0,
     this.showOnOff = false,
-
+    this.activeText,
+    this.togglePadding = const EdgeInsets.all(4),
+    this.inactiveText,
+    this.activeTextFontWeight,
     this.inactiveTextFontWeight,
     this.switchBorder,
     this.activeSwitchBorder,
@@ -248,6 +251,10 @@ class FlutterSwitch extends StatefulWidget {
   ///
   /// Defaults to the value of false.
   final bool disabled;
+  /// The padding of the toggle.
+  ///
+  /// Defaults to `EdgeInsets.all(4)`
+  final EdgeInsets togglePadding;
 
   @override
   _FlutterSwitchState createState() => _FlutterSwitchState();
@@ -379,7 +386,7 @@ class _FlutterSwitchState extends State<FlutterSwitch>
                           child: Container(
                             width: widget.toggleSize,
                             height: widget.toggleSize,
-                            padding: EdgeInsets.all(4.0),
+                            padding: widget.togglePadding,
                             decoration: BoxDecoration(
                               shape: BoxShape.Rectangle,
                               color: _toggleColor,
