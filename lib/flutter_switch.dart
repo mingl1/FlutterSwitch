@@ -383,7 +383,7 @@ class _FlutterSwitchState extends State<FlutterSwitch>
                             height: widget.toggleSize,
                             padding: EdgeInsets.all(4.0),
                             decoration: BoxDecoration(
-                              shape: BoxShape.circle,
+                              shape: BoxShape.Rectangle,
                               color: _toggleColor,
                               border: _toggleBorder,
                             ),
